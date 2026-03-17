@@ -1,15 +1,11 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 .theme-dark .header__decoder-tag {
   display: flex;
   align-items: center;
   gap: 10px;
   position: absolute;
+  top: 20px;
   right: 29px;
-  color: var(--accent-color);
+  color: var(--color-button);
   font-family: monospace;
   font-size: 18px;
   line-height: 1;
@@ -20,7 +16,7 @@
   content: "";
   width: 9px;
   height: 9px;
-  background-color: var(--accent-color);
+  background-color: var(--color-button);
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -41,14 +37,27 @@
 
   .decorated-zone::before {
     right: 20px;
-    border-top: 1px solid var(--accent-color);
-    border-right: 1px solid var(--accent-color);
+    top: 20px;
+    border-top: 1px solid var(--color-button);
+    border-right: 1px solid var(--color-button);
   }
 
   .decorated-zone::after {
-    bottom: 10px;
-    left: 10px;
-    border-bottom: 1px solid var(--accent-color);
-    border-left: 1px solid var(--accent-color);
+    bottom: 20px;
+    left: 35px;
+    border-bottom: 1px solid var(--color-button);
+    border-left: 1px solid var(--color-button);
+  }
+  @media (max-width: 375px) {
+    .decorated-zone::before {
+      right: 10px;
+    }
+    .theme-dark .header__decoder-tag {
+      right: 15px;
+    }
+    .decorated-zone::after {
+      bottom: 10px;
+      left: 10px;
+    }
   }
 }
