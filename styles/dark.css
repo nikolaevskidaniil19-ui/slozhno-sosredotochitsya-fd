@@ -1,63 +1,8 @@
 .theme-dark .header__decoder-tag {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  position: absolute;
-  top: 20px;
-  right: 29px;
-  color: var(--color-button);
-  font-family: monospace;
-  font-size: 18px;
-  line-height: 1;
 }
 
 /* Красная точка */
 .theme-dark .header__decoder-tag::after {
-  content: "";
-  width: 9px;
-  height: 9px;
-  background-color: var(--color-button);
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.decorated-zone {
-  position: relative;
-}
-
-@media (prefers-color-scheme: dark) {
-  .decorated-zone::before,
-  .decorated-zone::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    display: block;
-  }
-
-  .decorated-zone::before {
-    right: 20px;
-    top: 20px;
-    border-top: 1px solid var(--color-button);
-    border-right: 1px solid var(--color-button);
-  }
-
-  .decorated-zone::after {
-    bottom: 20px;
-    left: 35px;
-    border-bottom: 1px solid var(--color-button);
-    border-left: 1px solid var(--color-button);
-  }
-  @media (max-width: 375px) {
-    .decorated-zone::before {
-      right: 10px;
-    }
-    .theme-dark .header__decoder-tag {
-      right: 15px;
-    }
-    .decorated-zone::after {
-      bottom: 10px;
-      left: 10px;
-    }
-  }
+  display: block;
 }

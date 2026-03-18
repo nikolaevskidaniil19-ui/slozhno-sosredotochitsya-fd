@@ -1,8 +1,9 @@
 :root.theme-light {
-  --bg-image: url("/images/cover-image-light.png");
+  --bg-image: url("./images/cover-image-light.png");
   --bg-color: rgba(255, 241, 247, 1);
   --color-button: rgba(53, 52, 48, 1);
-  --font-family: IBM Plex Mono, Bold Regular;
+  --color-button-hover: rgba(53, 52, 48, 1/0.4);
+  --font-family: IBM Plex Mono;
   --cl-focus: rgba(255, 194, 230, 1);
   --cl-focus-shadow: rgba(255, 141, 203, 1);
   --cl-title: rgba(53, 52, 48, 1);
@@ -10,4 +11,35 @@
   --cl-text-bg: rgba(53, 52, 48, 1);
   --color-text: rgba(53, 52, 48, 1);
   --cl-text-decor: rgba(53, 52, 48, 1);
+  --cl-text-decor-hover: rgba(53, 52, 48, 1/0.4);
+}
+.theme-light .header__decoder-tag {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  .header__decoder-tag {
+    display: none;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url("./images/cover-image-light.png");
+    --bg-color: rgba(255, 241, 247, 1);
+    --color-button: rgba(53, 52, 48, 1);
+    --color-button-hover: rgba(53, 52, 48, 1/0.4);
+    --font-family: IBM Plex Mono;
+    --cl-focus: rgba(255, 194, 230, 1);
+    --cl-focus-shadow: rgba(255, 141, 203, 1);
+    --cl-title: rgba(53, 52, 48, 1);
+    --cl-bg-title: rgba(255, 141, 203, 1);
+    --cl-text-bg: rgba(53, 52, 48, 1);
+    --color-text: rgba(53, 52, 48, 1);
+    --cl-text-decor: rgba(53, 52, 48, 1);
+    --cl-text-decor-hover: rgba(53, 52, 48, 1/0.4);
+  }
+
+  .header__decoder-tag {
+    display: none;
+  }
 }
