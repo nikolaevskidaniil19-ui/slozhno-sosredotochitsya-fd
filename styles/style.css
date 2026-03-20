@@ -355,7 +355,7 @@ main {
     left: 10px;
   }
   .main {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
   .header {
     position: relative;
@@ -368,6 +368,7 @@ main {
     box-sizing: border-box;
   }
   .header__decoder-tag {
+    top: 10px;
     right: 15px;
   }
 

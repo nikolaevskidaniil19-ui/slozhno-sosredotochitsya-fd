@@ -10,7 +10,7 @@
   --cl-text-bg: rgba(53, 52, 48, 1);
   --color-text: rgba(53, 52, 48, 1);
   --cl-text-decor: rgba(53, 52, 48, 1);
-  --cl-text-decor-hover: rgba(53, 52, 48, 0.4);
+  --cl-text-decor-hover: rgba(53, 52, 48);
 }
 .theme-light .header__decoder-tag {
   display: none;
