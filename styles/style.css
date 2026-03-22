@@ -140,7 +140,7 @@ main {
 
 .header__description {
   max-width: 491px;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-family), monospace;
   font-weight: 700;
   margin-right: 20px;
   margin-top: 13px;
@@ -207,14 +207,14 @@ main {
 }
 
 .typography {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-family), monospace;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.3;
 }
 
 .typography-text {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-family), monospace;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.3;
@@ -300,15 +300,18 @@ main {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .header {
+    min-height: 768px;
     gap: 55px;
   }
   .header__theme-menu {
     display: flex;
     justify-content: flex-end;
-    align-self: flex-end;
+    padding-top: 79px;
     padding-right: 17px;
   }
-
+  .header__text {
+    padding-top: 67px;
+  }
   .header__theme-menu-list {
     flex-direction: column;
     align-items: flex-end;
@@ -316,7 +319,6 @@ main {
   }
   .header__title {
     align-self: center;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__description {
