@@ -23,8 +23,7 @@ main {
 }
 .header {
   position: relative;
-  height: 100vh;
-  min-height: 668px;
+  min-height: 100vh;
   box-sizing: border-box;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -39,7 +38,7 @@ main {
   top: 20px;
   right: 29px;
   color: var(--color-button);
-  font-family: var(--font-family) monospace;
+  font-family: var(--font-family), monospace;
   font-size: 18px;
 }
 
@@ -306,8 +305,7 @@ main {
   .header__theme-menu {
     display: flex;
     justify-content: flex-end;
-    align-self: start;
-    padding-top: 170px;
+    align-self: flex-end;
     padding-right: 17px;
   }
 
@@ -315,9 +313,6 @@ main {
     flex-direction: column;
     align-items: flex-end;
     gap: 15px;
-  }
-  .header__text {
-    padding-top: 63px;
   }
   .header__title {
     align-self: center;
@@ -355,17 +350,11 @@ main {
     left: 10px;
   }
   .main {
-    padding-bottom: 40px;
+    padding: 0 10px 40px 10px;
   }
   .header {
-    position: relative;
-    display: grid;
-    grid-template-rows: 1fr min-content 1fr;
-    height: 100vh;
-    min-height: 668px;
     gap: 55px;
     padding: 0 10px;
-    box-sizing: border-box;
   }
   .header__decoder-tag {
     top: 10px;
@@ -394,10 +383,6 @@ main {
     margin-right: 0;
     max-width: 100%;
   }
-  .main {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
   .container {
     display: block;
     padding-top: 40px;
@@ -410,22 +395,19 @@ main {
     grid-template-columns: 1fr;
     gap: 13px;
   }
-  .main__text-block {
-  }
+
   .holder {
     padding-top: 50px;
   }
   .holder_title {
-    max-width: 355px;
+    max-width: none;
   }
   .holder__grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .holder_title {
-    max-width: none;
-  }
+
   .box {
     padding-top: 50px;
     display: block;

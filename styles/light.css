@@ -17,11 +17,6 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .header__decoder-tag {
-    display: none;
-  }
-}
-@media (prefers-color-scheme: light) {
   :root {
     --bg-image: url("../images/cover-image-light.png");
     --bg-color: rgba(255, 241, 247, 1);
